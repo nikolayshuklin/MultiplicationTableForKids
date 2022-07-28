@@ -8,20 +8,20 @@
     tools:context = ".MainActivity">
 
     <ImageView
-        android:id="@+id/TextView"
+        android:id="@+id/zagolovok"
         android:layout_width="match_parent"
         android:layout_height="120dp"
 
-            android:src="@drawable/labelTop"
+            android:src="@drawable/zagal"
 
-        />
+     />
     <ImageButton
         android:id="@+id/imageButton1"
         android:layout_width="@dimen/drawableSize"
         android:layout_height="@dimen/drawableSize"
         android:src="@drawable/one"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TextView"
+        app:layout_constraintTop_toBottomOf="@id/zagolovok"
         app:layout_constraintHorizontal_weight="1"
         android:layout_marginStart="5dp"
         android:layout_marginTop="@dimen/marginTop"
@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/two"
         app:layout_constraintStart_toEndOf="@id/imageButton1"
         app:layout_constraintEnd_toStartOf="@id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@id/TextView"
+        app:layout_constraintTop_toBottomOf="@id/zagolovok"
         app:layout_constraintHorizontal_weight="1"
         android:layout_marginTop="@dimen/marginTop"
         />
@@ -46,7 +46,7 @@
         app:srcCompat="@drawable/three"
         app:layout_constraintStart_toEndOf="@id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TextView"
+        app:layout_constraintTop_toBottomOf="@id/zagolovok"
         app:layout_constraintHorizontal_weight="1"
         android:layout_marginTop="@dimen/marginTop"
         />
@@ -133,6 +133,24 @@
         app:layout_constraintStart_toStartOf="@id/imageButton8"
         app:layout_constraintTop_toBottomOf="@id/imageButton8"
 
+        />
+
+    <ImageView
+        android:layout_width="@dimen/drawableSize"
+        android:layout_height="@dimen/drawableSize"
+        android:src="@drawable/boys"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageButton10"
+        app:layout_constraintEnd_toStartOf="@id/imageButton10"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/drawableSize"
+        android:layout_height="@dimen/drawableSize"
+        android:src="@drawable/girl"
+        app:layout_constraintStart_toEndOf="@id/imageButton10"
+        app:layout_constraintTop_toTopOf="@id/imageButton10"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
